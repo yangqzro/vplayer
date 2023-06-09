@@ -1,0 +1,60 @@
+.vplayer-toolbar {
+    --vplayer__toolbar-dailog__bottom-pos: 42px;
+    --vplayer__toolbar-item__height: 22px;
+}
+
+.vplayer-toolbar {
+    position: relative;
+    width: 100%;
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+        height: 50px;
+        padding: 0 20px;
+    }
+
+    &__mask {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        height: 70px;
+
+        // background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==)
+        //     repeat-x bottom;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+    }
+}
+
+.vplayer-toolbar__pos-left,
+.vplayer-toolbar__pos-center,
+.vplayer-toolbar__pos-right {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.vplayer-toolbar__pos-left {
+    .vplayer-toolbar__item {
+        margin-right: 16px;
+    }
+}
+
+.vplayer-toolbar__pos-center {
+    justify-content: center;
+    .vplayer-toolbar__item {
+        margin: 0 8px;
+    }
+}
+
+.vplayer-toolbar__pos-right {
+    justify-content: flex-end;
+    .vplayer-toolbar__item {
+        margin-left: 16px;
+    }
+}

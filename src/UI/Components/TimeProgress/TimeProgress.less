@@ -1,0 +1,40 @@
+.vplayer-timeprogress {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+
+    &:hover {
+        .vplayer-timeprogress__bar {
+            height: 4px;
+        }
+    }
+
+    .vplayer-timeprogress__bar {
+        position: relative;
+        transition: all 0.2s;
+
+        width: 100%;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.2);
+
+        .vplayer-timeprogress__current-bar {
+            z-index: 2;
+            background-color: var(--vplayer__primary-color);
+        }
+
+        .vplayer-timeprogress__buffer-bar {
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+.vplayer-timeprogress__current-bar,
+.vplayer-timeprogress__buffer-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}

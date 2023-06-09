@@ -1,0 +1,5 @@
+<span class="vplayer-timerange vplayer-toolbar__item">
+    <span class="vplayer-timerange__current">{{currentTime}}</span>
+    <span>/</span>
+    <span class="vplayer-timerange__duration">{{duration}}</span>
+</span>

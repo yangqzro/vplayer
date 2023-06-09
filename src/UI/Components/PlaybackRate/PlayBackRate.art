@@ -1,0 +1,3 @@
+<div class="vplayer-playbackrate vplayer-toolbar__item">
+    <span>{{label}}</span>
+</div>

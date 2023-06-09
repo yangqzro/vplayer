@@ -1,0 +1,67 @@
+@keyframes show {
+    0% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes rightToLeft {
+    0% {
+        left: 100%;
+        transform: translate(0);
+    }
+
+    100% {
+        left: 0;
+        transform: translate(-100%);
+    }
+}
+
+.vplayer-danmaku {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    &__pause {
+        animation-play-state: paused !important;
+    }
+
+    &__item {
+        position: absolute;
+        padding: 2px 0;
+        opacity: var(--opacity, 1);
+
+        font-size: var(--font-size, 24px);
+        font-weight: 700;
+        color: var(--color, #fff);
+        text-shadow: rgb(0, 0, 0) 1px 0px 1px, rgb(0, 0, 0) 0px 1px 1px, rgb(0, 0, 0) 0px -1px -1px,
+            rgb(0, 0, 0) -1px 0px 1px;
+
+        white-space: pre;
+        user-select: none;
+    }
+
+    &__item-top,
+    &__item-bottom {
+        left: 50%;
+        transform: translateX(-50%);
+        animation: show var(--duration) linear 1 forwards;
+    }
+
+    &__item-top {
+        top: var(--top, 0);
+    }
+
+    &__item-bottom {
+        top: var(--top, 100%);
+    }
+
+    &__item-scroll {
+        top: var(--top, 30%);
+        animation: rightToLeft var(--duration) linear 1 forwards;
+    }
+}

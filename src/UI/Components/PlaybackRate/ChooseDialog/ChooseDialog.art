@@ -1,0 +1,7 @@
+<ul class="vplayer-playbackrate__dialog">
+    {{each rates}}
+    <li
+        class="vplayer-playbackrate__dialog-item{{currentRate === $value ? ' vplayer-playbackrate__dialog-current-item' : ' '}}"
+    >{{$value}}</li>
+    {{/each}}
+</ul>

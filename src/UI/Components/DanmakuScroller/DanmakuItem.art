@@ -1,0 +1,8 @@
+<span 
+    id="vplayer-danmaku__item-{{id}}"
+    class="vplayer-danmaku__item  vplayer-danmaku__item-{{modeType}}{{isPause ? " vplayer-danmaku__pause" : ""}}"
+    data-dm-id="{{id}}"
+    data-mode-type="{{modeType}}"
+    data-pipe="{{pipe}}"
+    style="--fontSize: {{fontSize}}; --color: {{color}}; --opacity: {{opacity}}; --duration: {{duration}}; --top: {{top}}"
+>{{content}}</span>

@@ -1,0 +1,16 @@
+<div class="vplayer-toolbar">
+    <div class="vplayer-toolbar__main">
+        {{if left}}
+        <div class="vplayer-toolbar__pos-left">{{left}}</div>
+        {{/if}}
+
+        {{if center}}
+        <div class="vplayer-toolbar__pos-center">{{center}}</div>
+        {{/if}}
+
+        {{if right}}
+        <div class="vplayer-toolbar__pos-right">{{right}}</div>
+        {{/if}}
+    </div>
+    <div class="vplayer-toolbar__mask"></div>
+</div>

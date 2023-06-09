@@ -1,0 +1,3 @@
+<div class="vplayer-volume icon vplayer-toolbar__item" title="音量调节">
+    <img src="{{icon}}" />
+</div>

@@ -1,0 +1,3 @@
+<div class="vplayer-container__playstate">
+    <img src="{{icon}}" />
+</div>

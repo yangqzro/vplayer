@@ -1,0 +1,48 @@
+.vplayer-volume__slider {
+    position: absolute;
+    left: 50%;
+    bottom: var(--vplayer__toolbar-dailog__bottom-pos);
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    width: 32px;
+    height: 100px;
+    padding: 8px 0;
+    border-radius: var(--vplayer__border-radius);
+    background-color: var(--vplayer__bg-color);
+
+    font-size: var(--vplayer__fs-small);
+    color: var(--vplayer__font-color);
+
+    .vplayer-volume__slider-bar {
+        position: relative;
+
+        width: 2px;
+        height: 60px;
+        background-color: var(--vplayer__font-color);
+
+        .vplayer-volume__current-bar {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--vplayer__primary-color);
+        }
+
+        .vplayer-volume__slider-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--vplayer__primary-color);
+        }
+    }
+}

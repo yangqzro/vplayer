@@ -1,0 +1,7 @@
+<div class="vplayer-volume__slider">
+    <span>{{volume}}</span>
+    <div class="vplayer-volume__slider-bar">
+        <div class="vplayer-volume__current-bar" style="top: {{54 - volume / 100 * 54}}px"></div>
+        <div class="vplayer-volume__slider-dot" style="top: {{48 - volume / 100 * 54}}px"></div>
+    </div>
+</div>

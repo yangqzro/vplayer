@@ -1,0 +1,3 @@
+<div class="vplayer-danmaku">
+    {{danmakuItems}}
+</div>

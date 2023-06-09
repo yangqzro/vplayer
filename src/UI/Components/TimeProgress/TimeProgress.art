@@ -1,0 +1,6 @@
+<div class="vplayer-timeprogress">
+    <div class="vplayer-timeprogress__bar" >
+        <div class="vplayer-timeprogress__current-bar" style="width: {{currentBarWidth}}"></div>
+        <div class="vplayer-timeprogress__buffer-bar" style="width: {{bufferBarWidth}}"></div>
+    </div>
+</div>

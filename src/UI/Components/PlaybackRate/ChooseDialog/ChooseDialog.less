@@ -1,0 +1,33 @@
+.vplayer-playbackrate__dialog {
+    list-style: none;
+    outline: none;
+
+    position: absolute;
+    left: 50%;
+    bottom: var(--vplayer__toolbar-dailog__bottom-pos);
+    transform: translateX(-50%);
+
+    overflow: hidden;
+    width: 70px;
+    background-color: var(--vplayer__bg-color);
+    margin: 0;
+    padding: 0;
+    border-radius: var(--vplayer__border-radius);
+
+    font-size: var(--vplayer__fs-normal);
+    color: var(--vplayer__font-color);
+    text-align: center;
+
+    .vplayer-playbackrate__dialog-item {
+        height: 32px;
+        line-height: 32px;
+
+        &:hover {
+            background-color: var(--vplayer__bg-hover-color);
+        }
+    }
+
+    .vplayer-playbackrate__dialog-current-item {
+        color: var(--vplayer__primary-color);
+    }
+}
